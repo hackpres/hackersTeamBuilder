@@ -1,0 +1,23 @@
+{
+  "name": "teamgenerator",
+  "version": "1.0.0",
+  "description": "teamGenerator is a CLI application used to update and generate a webpage that displays a companies employees.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hackpres/teamGenerator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hackpres/teamGenerator/issues"
+  },
+  "homepage": "https://github.com/hackpres/teamGenerator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
