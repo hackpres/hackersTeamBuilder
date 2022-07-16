@@ -4,6 +4,7 @@
   "description": "teamGenerator is a CLI application used to update and generate a webpage that displays a companies employees.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "jest"
   },
   "repository": {
