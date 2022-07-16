@@ -32,7 +32,7 @@ npm i
 
 ### Usage
 <a name="usage"/>
-Initialize Team Generator in your terminal with "npm start" answer the question prompts to build your organizations team!<br/>
+Initialize Team Generator in your terminal with "npm start" answer the question prompts to build your organizations team!<br/><br/>
 
 <img src="./images/prompts.png" width="800"/><br/>
 <img src="./images/teamHtml.png" width="800"/><br/>
