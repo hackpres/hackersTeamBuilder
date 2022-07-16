@@ -8,7 +8,7 @@ const managerQustions = require('./src/managerQuestions');
 const engineerQuestions = require('./src/engineerQuestions');
 const internQuestions = require('./src/internQuestions');
 
-const OUTPUT_DIR = path.resolve(__dirname, "output");
+const OUTPUT_DIR = path.resolve(__dirname, "dist");
 const outputPath = path.join(OUTPUT_DIR, "Team.html");
 
 const buildTeam = require('./lib/htmlRenderer');
@@ -65,8 +65,6 @@ function addMember() {
 };
 
 function generateTeam(array) {
-    fs.mkdir(OUTPUT_DIR, () => {})
-
     fs.writeFile(outputPath, buildTeam(array), function (err) {
         if (err) {
             return console.log(err);
