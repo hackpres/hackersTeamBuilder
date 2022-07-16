@@ -1,5 +1,5 @@
 
-# Team Generator.
+# Hacker's Team Builder.
 
 ![license badge](https://img.shields.io/badge/license-mit-brightgreen)
 ![Test badge](https://img.shields.io/badge/tests-passed-success)
@@ -9,11 +9,11 @@
 <a href="https://drive.google.com/file/d/1O_rxb3Ni3QXkFhwvCBPnMQmYilQafrKk/view?usp=sharing" title="teamGenerator Demo"><img src="./images/demoScreenShot.png" alt="Still frame from Demo Video" /></a>
 
 ## Description
-Team Generator is a CLI application designed to run in node.js and used to update and generate an html page to display an organizations employees.
+Team Builder is a CLI application designed to run in node.js and used to update and generate an html page to display an organizations employees.
 
-    The real motivation behind Team Generator is to practice building and running tests using jest.
+    The real motivation behind Team Builder is to practice building and running tests using jest.
 
-    I learned and utilized many different programming concepts while developing Team Generator. For instance building a parent class, and then extending that class with appropriate subclasses. reinforcing both the use of require() for files, but also maintaining quality file structure as my codebase grew to include more and more files and directories.
+    I learned and utilized many different programming concepts while developing Team Builder. For instance building a parent class, and then extending that class with appropriate subclasses. reinforcing both the use of require() for files, but also maintaining quality file structure as my codebase grew to include more and more files and directories.
 
 <img src="./images/passingTests.png" width="800"/><br/>
 
@@ -36,7 +36,7 @@ npm i
 
 ### Usage
 <a name="usage"/>
-Initialize Team Generator in your terminal with "npm start" answer the question prompts to build your organizations team!<br/><br/>
+Initialize Team Builder in your terminal with "npm start" answer the question prompts to build your organizations team!<br/><br/>
 
 <img src="./images/prompts.png" width="800"/><br/>
 <img src="./images/teamHtml.png" width="800"/><br/>
