@@ -3,18 +3,22 @@ const Engineer = require('./lib/engineer');
 const Intern = require('./lib/intern');
 const inquirer = require("inquirer");
 const fs = require('fs');
-const managerQustions = require('./src/managerQuestions')
+const path = require('path');
+const managerQustions = require('./src/managerQuestions');
 const engineerQuestions = require('./src/engineerQuestions');
 const internQuestions = require('./src/internQuestions');
-const { default: generateTeam } = require('./src/generateTeam');
 
+const OUTPUT_DIR = path.resolve(__dirname, "output");
+const outputPath = path.join(OUTPUT_DIR, "Team.html");
 
-const teamArr = []
+const buildTeam = require('./lib/htmlRenderer');
+
+const teamArr = [];
 
 function init() {
     inquirer.prompt(managerQustions).then(results => {
         const manager = new Manager(results.managerName, results.managerID, results.managerEmail, results.officeNum)
-        buildTeam(results, manager);
+        teamArr.push(manager);
         addMember();
     })
 }
@@ -32,13 +36,13 @@ function addMember() {
         if(results.desiredAddition === "Add an engineer") {
             inquirer.prompt(engineerQuestions).then(results => {
                 const engineer = new Engineer(results.engineerName, results.engineerID, results.engineerEmail, results.engineerGitHub)
-                buildTeam(results, engineer);
+                teamArr.push(engineer);
                 addMember();
             })
         } else if(results.desiredAddition === "Add an intern") {
             inquirer.prompt(internQuestions).then(results => {
                 const intern = new Intern(results.internName, results.internID, results.internEmail, results.internSchool)
-                buildTeam(results, intern);
+                teamArr.push(intern);
                 addMember();
             })
         } else {
@@ -58,14 +62,16 @@ function addMember() {
             })
         }
     })
-}
+};
 
-function buildTeam(answers, person) {
-    teamArr.push(person)
-    if(answers.finished === false) {
-        addMember()
-    } else {
+function generateTeam(array) {
+    fs.mkdir(OUTPUT_DIR, () => {})
 
-    }
-}
+    fs.writeFile(outputPath, buildTeam(array), function (err) {
+        if (err) {
+            return console.log(err);
+        }
+    })
+};
+
 init()

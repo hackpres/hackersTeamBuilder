@@ -24,16 +24,29 @@ h1 {
     font-size: 2.75rem;
 }
 
-#manager, #engineers, #interns {
+#team {
     display: flex;
     justify-content: center;
     margin: 1rem auto;
+    flex-wrap: wrap;
+}
+
+#managerContainer {
+    flex-basis: 100%;
+}
+
+#manager {
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .employee__card {
     width: 20rem;
     background-color: rgb(255, 248, 248);
     box-shadow: .25rem .25rem 1rem rgba(111, 54, 54, 0.4);
+    margin-bottom: 1.5rem;
+    margin-right: .75rem;
+    margin-left: .75rem;
 }
 
 .employee__header {
