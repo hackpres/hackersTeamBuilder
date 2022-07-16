@@ -4,6 +4,10 @@
 ![license badge](https://img.shields.io/badge/license-mit-brightgreen)
 ![Test badge](https://img.shields.io/badge/tests-passed-success)
 
+## Demo Video
+
+<a href="https://drive.google.com/file/d/1O_rxb3Ni3QXkFhwvCBPnMQmYilQafrKk/view?usp=sharing" title="teamGenerator Demo"><img src="./images/demoScreenShot.png" alt="Still frame from Demo Video" /></a>
+
 ## Description
 Team Generator is a CLI application designed to run in node.js and used to update and generate an html page to display an organizations employees.
 
