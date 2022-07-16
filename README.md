@@ -15,7 +15,7 @@ Team Builder is a CLI application designed to run in node.js and used to update 
 
     I learned and utilized many different programming concepts while developing Team Builder. For instance building a parent class, and then extending that class with appropriate subclasses. reinforcing both the use of require() for files, but also maintaining quality file structure as my codebase grew to include more and more files and directories.
 
-<img src="./images/passingTests.png" width="800"/><br/>
+<img src="./images/passingTests.png" width="600"/><br/>
 
 
 ## Table of Contents
@@ -38,8 +38,8 @@ npm i
 <a name="usage"/>
 Initialize Team Builder in your terminal with "npm start" answer the question prompts to build your organizations team!<br/><br/>
 
-<img src="./images/prompts.png" width="800"/><br/>
-<img src="./images/teamHtml.png" width="800"/><br/>
+<img src="./images/prompts.png" width="600"/><br/>
+<img src="./images/teamHtml.png" width="600"/><br/>
 
 
 ### License
